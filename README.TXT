@@ -1,21 +1,21 @@
 Arduino Library for Dallas Temperature ICs
 ==========================================
 
+For MAX31850 support, be sure to also get OneWire from
+https://github.com/adafruit/MAX31850_OneWire
+
 Usage
 -----
 
-This library supports the following devices:
+This library supports the following devices: 
+    MAX31850
     DS18B20
     DS18S20 - Please note there appears to be an issue with this series.
     DS1822
 
 You will need a pull-up resistor of about 5 KOhm between the 1-Wire data line
-and your 5V power. If you are using the DS18B20, ground pins 1 and 3. The
+and your 3 or 5V power. If you are using the DS18B20, ground pins 1 and 3. The
 centre pin is the data line '1-wire'.
-
-We have included a "REQUIRESNEW" and "REQUIRESALARMS" definition. If you 
-want to slim down the code feel free to use either of these by including
-#define REQUIRESNEW or #define REQUIRESALARMS a the top of DallasTemperature.h
 
 Credits
 -------
@@ -27,7 +27,7 @@ Tim Newsome <nuisance@casualhacker.net> added support for multiple sensors on
 the same bus.
 Guil Barros [gfbarros@bappos.com] added getTempByAddress (v3.5)
 Rob Tillaart [rob.tillaart@gmail.com] added async modus (v3.7.0)
-
+ladyad added MAX31850 support
 
 Website
 -------
