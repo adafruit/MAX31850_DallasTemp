@@ -285,7 +285,8 @@ uint8_t DallasTemperature::getResolution(uint8_t *deviceAddress) {
 // sets the value of the waitForConversion flag
 // TRUE : function requestTemperature() etc returns when conversion is ready
 // FALSE: function requestTemperature() etc returns immediately (USE WITH
-// CARE!!) 		  (1) programmer has to check if the needed delay has passed
+// CARE!!) 		  (1) programmer has to check if the needed delay has
+// passed
 //        (2) but the application can do meaningful things in that time
 void DallasTemperature::setWaitForConversion(bool flag) {
   waitForConversion = flag;
