@@ -705,8 +705,8 @@ float DallasTemperature::toCelsius(float fahrenheit) {
 
 // MnetCS - Allocates memory for DallasTemperature. Allows us to instance a new
 // object
-void *DallasTemperature::
-operator new(unsigned int size) // Implicit NSS obj size
+void *
+DallasTemperature::operator new(unsigned int size) // Implicit NSS obj size
 {
   void *p;                                 // void pointer
   p = malloc(size);                        // Allocate memory
