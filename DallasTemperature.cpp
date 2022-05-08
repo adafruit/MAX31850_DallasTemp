@@ -452,7 +452,7 @@ float DallasTemperature::calculateTemperature(uint8_t *deviceAddress,
             (float)scratchPad[COUNT_PER_C]);
     break;
   }
-    return NAN;
+  return NAN;
 }
 
 // returns temperature in degrees C or DEVICE_DISCONNECTED if the
